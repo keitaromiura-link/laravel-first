@@ -20,3 +20,7 @@ Route::get('foo', function () {
 });
 
 Route::view('/welcom', 'welcome');
+
+Route::get('user/{name}', function ($name) {
+    return 'User '.$name;
+})->where('name', '[A-Za-z]+');
