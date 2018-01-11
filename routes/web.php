@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('index');
 
 Route::get('foo', function () {
     return 'Hello World';
@@ -24,3 +24,7 @@ Route::view('/welcom', 'welcome');
 Route::get('user/{name}', function ($name) {
     return 'User '.$name;
 })->where('name', '[A-Za-z]+');
+
+Route::get('top', function () {
+    return redirect()->route('index');
+});
