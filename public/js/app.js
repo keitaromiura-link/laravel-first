@@ -42985,7 +42985,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "panel-body" }, [
               _vm._v(
-                "\n                    I'm an example component!\n                "
+                "\n                    私はサンプルコンポーネントです！\n                "
               )
             ])
           ])
